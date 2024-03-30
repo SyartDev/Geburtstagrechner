@@ -31,11 +31,13 @@ root.title("Geburtstagsrechner")
 root.geometry("300x150")
 
 
+
 # Label und Entry für das Geburtsdatum
 date_label = tk.Label(root, text="Geburtsdatum (YYYY-MM-DD):")
 date_label.pack()
 date_entry = tk.Entry(root)
 date_entry.pack()
+
 
 # Button zum Berechnen der Tage bis zum nächsten Geburtstag
 calculate_button = tk.Button(root, text="Berechnen", command=calculate_days_until_birthday)
@@ -44,6 +46,9 @@ calculate_button.pack()
 # Label für das Ergebnis
 result_label = tk.Label(root, text="")
 result_label.pack()
+
+# GUI starten
+root.mainloop()
 
 # GUI starten
 root.mainloop()
